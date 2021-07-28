@@ -1,0 +1,11 @@
+<resources>
+  <dimen name="dp10">
+    13.33dp
+  </dimen>
+  <dimen name="sp16">
+    21.33sp
+  </dimen>
+  <dimen name="sp22">
+    29.33sp
+  </dimen>
+</resources>
