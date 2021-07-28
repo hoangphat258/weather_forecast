@@ -13,4 +13,12 @@ abstract class BaseActivity: AppCompatActivity() {
         imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
 
+    protected fun disableView(view: View) {
+        view.isEnabled = false
+    }
+
+    protected fun enableView(view: View) {
+        view.isEnabled = true
+    }
+
 }

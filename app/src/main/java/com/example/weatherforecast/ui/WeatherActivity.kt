@@ -29,8 +29,12 @@ class WeatherActivity : BaseActivity() {
         if (DeviceUtils.isDeviceRooted()) {
             binding.tvErrorMessage.text = getString(R.string.rooted_device)
             binding.tvErrorMessage.visibility = View.VISIBLE
+            disableView(binding.btnGetWeather)
+            disableView(binding.edtSearch)
         } else {
             binding.tvErrorMessage.visibility = View.GONE
+            enableView(binding.btnGetWeather)
+            enableView(binding.btnGetWeather)
             initView()
             viewModel.getWeather(Constant.DEFAULT_CITY)
             setupObserver()
